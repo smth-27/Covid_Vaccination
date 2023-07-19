@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Vaccination Center</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h2>Add Vaccination Center</h2>
+    <form action="/admin/add_vaccination_center" method="post">
+        <input type="text" name="name" placeholder="Name" required><br>
+        <input type="text" name="location" placeholder="Location" required><br>
+        <input type="text" name="working_hours" placeholder="Working Hours" required><br>
+        <input type="submit" value="Add">
+    </form>
+</body>
+</html>
